@@ -3,9 +3,21 @@
 #variations can store one piece of infomation
 #name them well, lower case, underscore between words
 
-total_add = 0
-for i in range(int(input("Enter first number: "))):
-    num=int(input("Number: "))
-    total_add = total_add+num
-print (total_add)
+penis = []
+ask = True
+while ask == True:
+    mydick = input()
+    if mydick=='#':
+        ask = False
+    else:
+        penis.append(mydick)
+
+for i in range(len(penis)-1):
+    if penis[i+1]<penis[i]:
+        print('Down')
+    elif penis[i+1]>penis[i]:
+        print('Up')
+
     
+    
+          
