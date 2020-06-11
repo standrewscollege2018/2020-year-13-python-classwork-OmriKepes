@@ -4,18 +4,16 @@
 #name them well, lower case, underscore between words
 
 ask= True
-counter=0
-old_num=0
-while ask== True:
-    num = int(input("Enter number: "))
-    if num == 0:
-        ask = False
+num1 = int(input("Enter first number: "))
+counter = 0
+total_add = 0
+while ask==True:
+    num=int(input("Number: "))
+    counter = counter+1
+    if counter<num1:
+        total_add = total_add+num
     else:
-        counter+=1
-        old_num+=num
-avg=old_num/counter
-avgr=round(avg,1)
-print (avgr)
-        
-
-
+        total_add = total_add+num
+        ask= False
+print (total_add)
+    
