@@ -3,19 +3,19 @@
 #variations can store one piece of infomation
 #name them well, lower case, underscore between words
 
-penis = []
+inputs = []
 ask = True
 while ask == True:
     mydick = input()
     if mydick=='#':
         ask = False
     else:
-        penis.append(mydick)
+        inputs.append(mydick)
 
 for i in range(len(penis)-1):
-    if penis[i+1]<penis[i]:
+    if inputs[i+1]<inputs[i]:
         print('Down')
-    elif penis[i+1]>penis[i]:
+    elif inputs[i+1]>inputs[i]:
         print('Up')
 
     
