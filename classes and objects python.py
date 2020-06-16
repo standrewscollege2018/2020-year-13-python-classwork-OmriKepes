@@ -32,12 +32,16 @@ def life_check():
     for enemy in enemy_list:
         if enemy.get_life()>= check:
             print(enemy.get_name())
+def create_enemy():
+    '''This funcation creates a new enemy with a name and life.'''
+    new_name = input("Enter new name: ")
+    new_life = int(input("Enter new life: "))
+    Enemy(new_name, new_life)
+    enemy_list.append(new_name, new_life)
 # The enemy_list stores all the enemy objects
 enemy_list = []
-#create an enemy object and store in variable called enemy1
-enemy1 = Enemy("Jordan",5)
-enemy2 = Enemy("Alan",10)
-
+create_enemy()
 life_check()
+
 
 
